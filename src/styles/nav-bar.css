@@ -1,5 +1,6 @@
 .container {
-    width: 220px;
+    width: 300px;
+    min-width: 300px;
     min-height: 100vh;
     height: 100%;
     /* background-color: aquamarine; */
@@ -34,8 +35,8 @@
 }
 
 .item-icon {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     margin-right: 10px; 
 }
 
@@ -65,5 +66,6 @@
 .item-content {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
   

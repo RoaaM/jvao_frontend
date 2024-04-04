@@ -23,16 +23,21 @@ export default function Navbar() {
         ],
         "FAQS": [],
     };
-
+    
     return (
         <div className="container">
             <img src={logo} alt="Logo" className="logo" />
             <div className="content-div">
                 <p className="jvao">JVAO</p>
-                <NavbarItem itemValue={'Home'} itemIcon={icHomePage} subItems={subItems['Home']} />
-                <NavbarItem itemValue={'Objectives'} itemIcon={icObjectives} subItems={subItems['Objectives']} />
-                <NavbarItem itemValue={'Our Products'} itemIcon={icService} subItems={subItems['Our Products']} />
-                <NavbarItem itemValue={'FAQS'} itemIcon={icAnswers} subItems={subItems['FAQS']} />
+                <NavbarItem to="/" itemValue={'Home'} itemIcon={icHomePage} subItems={subItems['Home']} iconStyle={{width: '48px', marginLeft: '-9px', marginRight: '5px'}} />
+
+                <NavbarItem to="/objectives" itemValue={'Objectives'} itemIcon={icObjectives} subItems={subItems['Objectives']}
+                iconStyle={{width: "35px",
+                height: "35px", marginLeft:"-3px"}} />
+
+                <NavbarItem to="/products" itemValue={'Our Products'} itemIcon={icService} subItems={subItems['Our Products']} />
+
+                <NavbarItem to="/faqs" itemValue={'FAQS'} itemIcon={icAnswers} subItems={subItems['FAQS']} />
             </div>
         </div>
     );

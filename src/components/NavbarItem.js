@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import '../styles/nav-bar.css';
 
 export default function NavbarItem(props) {
-  const { itemValue, itemIcon, subItems } = props;
+  const { itemValue, itemIcon, subItems, iconStyle } = props;
   const [showSubItems, setShowSubItems] = useState(false);
 
   const toggleSubItems = () => {
@@ -12,7 +12,7 @@ export default function NavbarItem(props) {
   return (
     <div className="item-container-sub-item" onClick={toggleSubItems}>
       <div className="item-content">
-        <img src={itemIcon} alt="item-icon" className="item-icon" />
+        <img style={iconStyle} src={itemIcon} alt="item-icon" className="item-icon" />
         <p className="item-text">{itemValue}</p>
       </div>
       {showSubItems && (
