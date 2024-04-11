@@ -1,0 +1,121 @@
+.side-by-side {
+    display: flex;
+    align-items: flex-start;
+    background-color: #F5F5F5;
+}
+
+.main-container-plot {
+    padding: 0;
+    margin: 0;
+    background-image: url('../images/backgroun_plot.png');
+    background-size: cover;
+    background-position: top;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.head-query {
+    color: #64467C;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texts {
+    color: #72467C;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+
+.side-by-side-sections {
+    display: flex;
+    justify-content: space-between; /* Items will be evenly distributed */
+}
+
+
+.itext {
+    margin-bottom: 10px; /* Add space between paragraphs */
+    font-size: 16px;
+    color: #72467C;
+  }
+
+.icon {
+    width: 25px;
+    height: 25px;
+    height: auto;
+    padding: 11px;
+}
+
+.desc-container {
+    display: inline-flex; 
+    align-items: center; 
+    margin-bottom: 10px; 
+    width: 85%;
+}
+  
+.inline-selects {
+    display: flex; 
+    margin: 50px; 
+}
+
+.lable-style {
+    color: #72467C;
+    margin: 14px;
+    font-size: 25px;
+}
+
+.select-style {
+    background-color: #A19AA6;
+    color: #fff;
+    width: 70px;
+    height: 35px;
+    font-size: 20px;
+}
+
+.slash {
+    color: #64467C;
+    padding: 8px;
+}
+
+.axis-fields {
+    display: inline-flex;  /* Arrange items inline */
+    margin-left: 10px;     /* Add space after label */
+  }
+  
+.axis-fields span {
+    color: #72467C;
+    font-size: 25px;
+
+}
+
+.input-style {
+    width: 98px;
+    height: 29px;
+    margin: 1px;
+    background-color: #BCB7C0;
+    border-color: #BCB7C0; 
+    color: #fff;
+    font-size: 25px;
+}
+
+
+.info-section {
+    display: flex; /* Allow horizontal arrangement */
+    justify-content: space-between; /* Align left and right edges */
+    align-items: center; /* Align buttons at the top */
+  }
+  
+.text-and-button {
+    display: flex;
+    flex-direction: column; /* Stack text and button vertically */
+    align-items: flex-end; /* Align button to the right */
+    margin-left: 10px; /* Optional: Add space between buttons */
+}
+
+.button-group {
+    display: flex;    
+}

@@ -10,7 +10,7 @@
     background-image: url('../images/background.svg');
     background-size: cover;
     background-position: top;
-    min-height: 200vh;
+    min-height: 100vh;
     justify-content: center;
 }
 
@@ -23,5 +23,5 @@
 }
 
 .text-container {
-    padding: 138px;
+    padding: 200px;
 }
