@@ -17,9 +17,9 @@ export default function Navbar() {
         "Home": [],
         "Objectives": [],
         "Our Products": [
-            { value: "Data", icon: icRenko },
-            { value: "Services", icon: icSearch },
-            { value: "Scripts", icon: icLegal },
+            { value: "Data", icon: icRenko , to: "/data"},
+            { value: "Services", icon: icSearch, to: "/services" },
+            { value: "Scripts", icon: icLegal, to: "/scripts"},
         ],
         "FAQS": [],
     };
@@ -35,7 +35,7 @@ export default function Navbar() {
                 iconStyle={{width: "35px",
                 height: "35px", marginLeft:"-3px"}} />
 
-                <NavbarItem to="/products" itemValue={'Our Products'} itemIcon={icService} subItems={subItems['Our Products']} />
+                <NavbarItem itemValue={'Our Products'} itemIcon={icService} subItems={subItems['Our Products']} />
 
                 <NavbarItem to="/faqs" itemValue={'FAQS'} itemIcon={icAnswers} subItems={subItems['FAQS']} />
             </div>

@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import '../styles/data.css'; 
 import jinabaseImage from '../images/query1.png';
 import gaiaImage from '../images/query2.png';
-
+import { Link } from "react-router-dom";
 
 export default function Data() {
   return (
@@ -19,7 +19,7 @@ export default function Data() {
           <div className="side-by-side-sections">
             {/* Jinabase Section */}
             <div className="section">
-            <p className="sub-head">Jinabase</p>
+            <Link to={"/jinabase"}><p className="sub-head">Jinabase</p></Link>
 
               <img
                 className="section-image"
@@ -32,14 +32,13 @@ export default function Data() {
             </div>
             {/* Gaia Section */}
             <div className="section">
-            <p className="sub-head">Gaia</p>
+            <Link to={"/gaia"}><p className="sub-head">Gaia</p></Link>
               <img
                 className="section-image"
                 src={gaiaImage}
                 alt="Gaia"
               />
               <div className="gaia-description">
-                
                 <p>Gaia, launched by the European Space Agency in 2013, aims to map the Milky Way with unprecedented precision, charting the positions and movements of over a billion stars. Positioned at the second Lagrange point (L2), Gaia's advanced instruments provide detailed measurements of stellar positions and brightnesses.</p>
               </div>
             </div>

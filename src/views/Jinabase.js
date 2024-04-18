@@ -5,6 +5,7 @@ import '../styles/jinabase.css';
 import InfoIcon from "../images/info.png";
 import Select from "../components/Select";
 import Button from "../components/Button";
+import { abundances, elements } from "../constants";
 
 export default function Jinabase() {
   
@@ -23,9 +24,9 @@ export default function Jinabase() {
                 <p className="texts">Choose abundances for your sample and plotting</p>
                 <div>
               <div className="inline-selects">
-              <Select labelText={'X-axis'} />
+              <Select labelText={'X-axis'} list={elements} />
               <span className="slash"> / </span>
-              <Select />
+              <Select list={elements} />
               <span className="axis-fields">
                 <span>From: </span>
                 <input className="input-style" type="text" /> 
@@ -35,9 +36,9 @@ export default function Jinabase() {
               </div>
 
               <div className="inline-selects">
-              <Select labelText={'Y-axis'} />
+              <Select labelText={'Y-axis'} list={elements} />
               <span className="slash"> / </span>
-              <Select />
+              <Select list={elements} />
               <span className="axis-fields">
                 <span>From: </span>
                 <input className="input-style" type="text" /> 
@@ -49,8 +50,8 @@ export default function Jinabase() {
               <div className="info-section">
               <Button label="Useful information" /> 
               <div className="text-and-button"> 
-                <span>Solar abundances</span>
-                <Select />
+                <span className="txt-btn">Solar abundances</span>
+                <Select width={'200px'} list={abundances} />
               </div>
               </div>
             </div>

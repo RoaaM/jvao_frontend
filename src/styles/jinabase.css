@@ -102,7 +102,6 @@
     font-size: 25px;
 }
 
-
 .info-section {
     display: flex; /* Allow horizontal arrangement */
     justify-content: space-between; /* Align left and right edges */
@@ -111,11 +110,26 @@
   
 .text-and-button {
     display: flex;
-    flex-direction: column; /* Stack text and button vertically */
-    align-items: flex-end; /* Align button to the right */
-    margin-left: 10px; /* Optional: Add space between buttons */
+    flex-direction: column; 
+}
+
+.txt-btn {
+    padding-left: 12px;
+    color: #72467C;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .button-group {
     display: flex;    
+}
+
+.my-button {
+    background-color: #64467C;
+    color: #fff;
+    height: 50px;
+    width: 181px;
+    font-size: larger;
+    margin: 10px;
+    margin-top: 17px;
 }

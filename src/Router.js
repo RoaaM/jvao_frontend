@@ -8,7 +8,9 @@ import Products from './views/Products';
 import FAQs from './views/FAQs';
 import Data from './views/Data';
 import Jinabase from './views/Jinabase';
-import OurProducts from './views/OurProducts';
+import Scripts from './views/Scripts';
+import Services from './views/Services';
+import Gaia from './views/Gaia';
 
 function RouterComponent() {
     return (
@@ -22,8 +24,10 @@ function RouterComponent() {
             <Route path='/products' element={<Products />}/>
             <Route path='/faqs' element={<FAQs />}/>
             <Route path='/data' element={<Data />}/>
+            <Route path='/services' element={<Services />}/>
+            <Route path='/scripts' element={<Scripts />}/>
             <Route path='/jinabase' element={<Jinabase />}/>
-            <Route path='/ourproducts' element={<OurProducts />}/>
+            <Route path='/gaia' element={<Gaia />}/>
           </Routes>
         </div>
       </Router>

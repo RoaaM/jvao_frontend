@@ -1,0 +1,3 @@
+export const elements = ["Li", "Be", "C", "N", "O", "F", "Na", "Mg", "Al", "Si", "P", "S", "K", "Ca", "Sc", "Ti", "V", "Cr", "Mn", "Fe", "Co", "Ni", "Cu", "Zn", "Ga", "Ge", "As", "Se", "Rb", "Sr", "Y", "Zr", "Nb", "Mo", "Ru", "Rh", "Pd", "Ag", "Cd", "Sn", "Te", "Ba", "La", "Ce", "Pr", "Nd", "Sm", "Eu", "Gd", "Tb", "Dy", "Ho", "Er", "Tm", "Yb", "Lu", "Hf", "W", "Os", "Ir", "Pt", "Au", "Hg", "Pb", "Bi", "Th", "U"]
+
+export const abundances = ['Asplund 2009', 'Asplund 2005', 'Grevesse & Sauval 1998', 'Anders & Grevesse 1989']
