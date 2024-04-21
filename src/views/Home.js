@@ -11,7 +11,7 @@ export default function Home() {
           <Header />
           <div className="main-container">
             <div className="text-container">
-              <p className="description">
+              <p className="description-header">
               JORDANIAN VIRTUAL ASTRONOMICAL OBSERVATORY
               </p>
               <p className="description">
