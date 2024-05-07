@@ -1,0 +1,16 @@
+.container-service {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 0;
+    margin: 0;
+    background-color: #BEBEBE;
+    background-size: cover;
+    background-position: top;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.img-container {
+    width: 500px;
+}

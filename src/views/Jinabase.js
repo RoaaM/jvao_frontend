@@ -13,9 +13,12 @@ export default function Jinabase() {
   const [yColumn, setYColumn] = useState('')
 
   const [plot, setPlot] = useState('');
-
+  const [table, setTable] = useState([]);
+  const [tableLoading, setTableLoading] = useState(false);
+  
   const drawPlot = async () => {
     try {
+      setTable([])
       console.log({xColumn, yColumn});
       const {data} = await axios.post('http://127.0.0.1:8000/jinabase/plot_data/', {
         xColumn,
@@ -26,6 +29,26 @@ export default function Jinabase() {
       console.log("data", data);
     } catch (error) {
       console.log("error", error);
+    }
+  }
+
+  const showTable = async () => {
+    try {
+      setPlot('')
+      setTable([])
+      setTableLoading(true)
+      console.log({xColumn, yColumn});
+      const {data} = await axios.post('http://127.0.0.1:8000/jinabase/show_table/', {
+        xColumn,
+        yColumn
+      });
+
+      console.log("data", data?.table_data);
+      setTable(data?.table_data)
+    } catch (error) {
+      console.log("error", error);
+    } finally {
+      setTableLoading(false)
     }
   }
 
@@ -97,9 +120,34 @@ export default function Jinabase() {
               </div>
               <div className="button-group"> 
                 <Button onClick={drawPlot} label="Plot Abundances" />
-                <Button label="Show data table" />
+                <Button onClick={showTable} label="Show data table" />
               </div>
-            {plot&&<img src={`data:image/png;base64,${plot}`} alt="element plot" style={{width: 603, height:422}} />}
+
+{tableLoading&&<p>Loading...</p>}
+              {table.length > 0 && <div className="table-container">
+  <table className="table">
+    <thead>
+      <tr>
+        {table.length > 0 &&
+          Object.keys(table[0]).map((key) => (
+            <th key={key}>{key}</th>
+          ))}
+      </tr>
+    </thead>
+    <tbody>
+      {table.map((row, index) => (
+        <tr key={index}>
+          {Object.values(row).map((cell, index) => (
+            <td key={index}>{cell}</td>
+          ))}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>}
+
+
+            {plot !== ''&&<img src={`data:image/png;base64,${plot}`} alt="element plot" style={{width: 603, height:422}} />}
             </div>
             </div>
              
@@ -179,7 +227,7 @@ export default function Jinabase() {
                 </div>
             </div>
             </div>
-            
+
             <div className="side-by-side-sections">
             <div className="section">
               <div>
