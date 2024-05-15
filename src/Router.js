@@ -11,6 +11,7 @@ import Jinabase from './views/Jinabase';
 import Scripts from './views/Scripts';
 import Services from './views/Services';
 import Gaia from './views/Gaia';
+import AboutUs from './views/AboutUs';
 
 function RouterComponent() {
     return (
@@ -20,6 +21,7 @@ function RouterComponent() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path='/aboutus' element={<AboutUs />}/>
             <Route path='/objectives' element={<Objectives />} />
             <Route path='/products' element={<Products />}/>
             <Route path='/faqs' element={<FAQs />}/>

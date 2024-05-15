@@ -19,7 +19,7 @@ export default function Data() {
           <div className="side-by-side-sections">
             {/* Jinabase Section */}
             <div className="section">
-            <Link to={"/jinabase"}><p className="sub-head">Jinabase</p></Link>
+            <Link to={"/jinabase"}><p className="sub-head">JINAbase</p></Link>
 
               <img
                 className="section-image"
