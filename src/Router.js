@@ -12,6 +12,7 @@ import Scripts from './views/Scripts';
 import Services from './views/Services';
 import Gaia from './views/Gaia';
 import AboutUs from './views/AboutUs';
+import MyVisitors from './views/MyVisetor';
 
 function RouterComponent() {
     return (
@@ -30,6 +31,7 @@ function RouterComponent() {
             <Route path='/scripts' element={<Scripts />}/>
             <Route path='/jinabase' element={<Jinabase />}/>
             <Route path='/gaia' element={<Gaia />}/>
+            <Route path='/myvistors' element={<MyVisitors />}/>
           </Routes>
         </div>
       </Router>

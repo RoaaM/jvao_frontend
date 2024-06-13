@@ -8,7 +8,7 @@ import icAnswers from '../images/icAnswers.png';
 import icRenko from '../images/icRenko.png';
 import icSearch from '../images/icSearch.png';
 import icLegal from '../images/icLegal.png';
-
+import map from '../images/maps-and-flags.png';
 import NavbarItem from "./NavbarItem";
 
 export default function Navbar() {
@@ -36,8 +36,9 @@ export default function Navbar() {
                 height: "35px", marginLeft:"-3px"}} />
 
                 <NavbarItem itemValue={'Our Products'} itemIcon={icService} subItems={subItems['Our Products']} />
-
                 <NavbarItem to="/faqs" itemValue={'FAQS'} itemIcon={icAnswers} subItems={subItems['FAQS']} />
+
+                <NavbarItem to="/myvistors" itemValue={'Our Vistors'} itemIcon={map} subItems={subItems['MyVistors']} />
             </div>
         </div>
     );

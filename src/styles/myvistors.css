@@ -1,0 +1,29 @@
+/* MyVisitors.css */
+.main-container-visitor{
+    padding: 0;
+    margin: 0;
+    background-image: url('../images/bgg.png');
+    background-size: cover;
+    background-position: top;
+    min-height: 100vh;
+    justify-content: center;
+    width: 100%;
+}
+
+.map-container {
+  width: 70%;
+  height: 400px; /* Adjust height as needed */
+  max-width: 800px; /* Adjust max-width as needed */
+  margin: 20px auto; /* Center the map container */
+  border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+  background-color: #f9f9f9; /* Adjust background color to blend with design */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+}
+
+.text-visitors .head {
+  padding-top: 135px;
+  font-size: 50px; /* Adjust font size to be consistent with design */
+  color: #72467C; /* Adjust text color to be consistent with design */
+  text-align: center; /* Center the heading text */
+  margin-bottom: 20px; /* Add space between heading and map */
+}
